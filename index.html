@@ -9,10 +9,46 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
-    We are launching soon! Subscribe and get notified Notify Me &copy; Copyright
-    Ping. All rights reserved.
+    <main>
+      <picture><img src="./images/logo.svg" alt="Ping Logo" /></picture>
+
+      <h1>We are launching <span>soon!</span></h1>
+      <h2>Subscribe and get notified</h2>
+      <form>
+        <input type="email" placeholder="Your email address..." />
+        <button type="submit">Notify Me</button>
+      </form>
+      <picture>
+        <img
+          src="./images/illustration-dashboard.png"
+          alt="Dashboard illustration"
+        />
+      </picture>
+    </main>
+    <footer>
+      <div class="social-media">
+        <div>
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+      <div>&copy; Copyright Ping. All rights reserved.</div>
+    </footer>
   </body>
 </html>
