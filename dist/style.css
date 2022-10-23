@@ -8,4 +8,65 @@
 body {
   font-family: "Libre Franklin", sans-serif;
   font-size: 1rem;
+  max-width: 90rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5.0625rem 25rem;
+}
+
+main .logo img {
+  width: 5.625rem;
+}
+main img {
+  width: 100%;
+}
+main h1 {
+  font-size: 3rem;
+  line-height: 3.75rem;
+  color: #969696;
+  font-weight: 200;
+  padding-top: 3.75rem;
+}
+main h1 span {
+  color: #000;
+  font-weight: 700;
+}
+main h2 {
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+main form {
+  padding-top: 2.375rem;
+  padding-bottom: 5.875rem;
+}
+main form input {
+  display: inline-block;
+  width: 26.3125rem;
+  outline: 0.0625rem solid #C2D3FF;
+  padding: 0.625rem 1.25rem;
+}
+main form input::-moz-placeholder {
+  color: #B8C7ED;
+}
+main form input:-ms-input-placeholder {
+  color: #B8C7ED;
+}
+main form input::placeholder {
+  color: #B8C7ED;
+}
+main form input, main form button {
+  border-radius: 1.25rem;
+  border: none;
+}
+main form button {
+  background-color: #4C7BF3;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.625rem 1.875rem;
+}
+main form button:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
