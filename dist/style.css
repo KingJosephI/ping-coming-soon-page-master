@@ -46,6 +46,7 @@ main form input {
   width: 26.3125rem;
   outline: 0.0625rem solid #C2D3FF;
   padding: 0.625rem 1.25rem;
+  margin-right: 1.25rem;
 }
 main form input::-moz-placeholder {
   color: #B8C7ED;
@@ -69,4 +70,22 @@ main form button {
 }
 main form button:hover {
   cursor: pointer;
+  background-color: rgba(76, 123, 243, 0.6431372549);
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: center;
+}
+footer .social-media > * {
+  border: 0.0625rem solid rgba(76, 123, 243, 0.4784313725);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+footer .social-media > * i {
+  color: #4C7BF3;
 }/*# sourceMappingURL=style.css.map */
