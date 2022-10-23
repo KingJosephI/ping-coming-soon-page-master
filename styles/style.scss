@@ -15,10 +15,8 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: rem(81) rem(400);
+  padding: rem(81) rem(300);
 }
-
-
 
 main {
   .logo img{ 
@@ -50,6 +48,14 @@ main {
   form {
     padding-top: rem(38);
     padding-bottom: rem(94);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    .input-container {
+      display: inline-block;
+      text-align-last: left;
+    }
 
     input {
       display: inline-block;
@@ -78,17 +84,24 @@ main {
       &:hover {
         cursor: pointer;
         background-color: #4c7bf3a4;
-
       }
+    }
+
+    p {
+      font-size: rem(12);
+      color: red;
+      font-style: italic;
+      margin-top: rem(7);
     }
   }
 }
-
 
 footer {
   .social-media {
     display: flex;
     justify-content: center;
+    padding-top: rem(62);
+    padding-bottom: rem(25);
 
    & > * {
     border: rem(1) solid #4c7bf37a;
@@ -98,15 +111,25 @@ footer {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    margin-right: rem(10);
 
-    &:not(:first-child){
-      // padding-left: rem(5);
+    &:hover {
+      background-color: #4C7BF3;
+      cursor: pointer;
+
+      i {
+        color: #fff;
+      }
     }
 
     i {
       color: #4C7BF3;
     }
    }
+  }
 
+  .copyright {
+    color: #969696;
+    font-size: rem(12);
   }
 }

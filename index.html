@@ -17,6 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./dist/style.css" />
+    <script src="./main.js" defer></script>
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
@@ -24,12 +25,20 @@
       <picture class="logo">
         <img src="./images/logo.svg" alt="Ping Logo" />
       </picture>
-
       <h1>We are launching <span>soon!</span></h1>
       <h2>Subscribe and get notified</h2>
       <form>
-        <input type="email" placeholder="Your email address..." />
-        <button type="submit">Notify Me</button>
+        <div class="input-container">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email address..."
+          />
+          <p id="error-message">Please provide a valid email address</p>
+        </div>
+
+        <button type="submit" id="submit">Notify Me</button>
       </form>
       <picture>
         <img
@@ -50,7 +59,7 @@
           <i class="fa-brands fa-instagram"></i>
         </div>
       </div>
-      <div>&copy; Copyright Ping. All rights reserved.</div>
+      <div class="copyright">&copy; Copyright Ping. All rights reserved.</div>
     </footer>
   </body>
 </html>

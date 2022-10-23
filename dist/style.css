@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 5.0625rem 25rem;
+  padding: 5.0625rem 18.75rem;
 }
 
 main .logo img {
@@ -40,6 +40,14 @@ main h2 {
 main form {
   padding-top: 2.375rem;
   padding-bottom: 5.875rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+main form .input-container {
+  display: inline-block;
+  -moz-text-align-last: left;
+       text-align-last: left;
 }
 main form input {
   display: inline-block;
@@ -72,10 +80,18 @@ main form button:hover {
   cursor: pointer;
   background-color: rgba(76, 123, 243, 0.6431372549);
 }
+main form p {
+  font-size: 0.75rem;
+  color: red;
+  font-style: italic;
+  margin-top: 0.4375rem;
+}
 
 footer .social-media {
   display: flex;
   justify-content: center;
+  padding-top: 3.875rem;
+  padding-bottom: 1.5625rem;
 }
 footer .social-media > * {
   border: 0.0625rem solid rgba(76, 123, 243, 0.4784313725);
@@ -85,7 +101,19 @@ footer .social-media > * {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  margin-right: 0.625rem;
+}
+footer .social-media > *:hover {
+  background-color: #4C7BF3;
+  cursor: pointer;
+}
+footer .social-media > *:hover i {
+  color: #fff;
 }
 footer .social-media > * i {
   color: #4C7BF3;
+}
+footer .copyright {
+  color: #969696;
+  font-size: 0.75rem;
 }/*# sourceMappingURL=style.css.map */
