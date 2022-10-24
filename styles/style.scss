@@ -54,12 +54,12 @@ main {
 
     .input-container {
       display: inline-block;
-      text-align-last: left;
+      text-align: left;
     }
 
     input {
       display: inline-block;
-      width: rem(421);
+      min-width: rem(421);
       outline: rem(1) solid #C2D3FF;
       padding: rem(10) rem(20);
       margin-right: rem(20);
@@ -79,7 +79,8 @@ main {
       color: #FFF;
       font-weight: 500;
       font-size: rem(16);
-      padding: rem(10) rem(30);
+      padding: rem(10) rem(40);
+      display: block;
 
       &:hover {
         cursor: pointer;
@@ -89,8 +90,8 @@ main {
 
     p {
       font-size: rem(12);
-      color: red;
       font-style: italic;
+      color: red;
       margin-top: rem(7);
     }
   }
@@ -131,5 +132,48 @@ footer {
   .copyright {
     color: #969696;
     font-size: rem(12);
+  }
+}
+
+
+@media screen and (max-width: rem(900)) {
+  body {
+    padding: rem(81) rem(50);
+  }
+
+  .input-container {
+    display: block;
+    width: 100%;
+  }
+  main{
+    h1 {
+      font-size: rem(32);
+    }
+
+    h2 {
+      font-size: rem(16);
+      font-weight: 200;
+    }
+
+    p{
+      text-align: center;
+    }
+  }
+ 
+  form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .input-container {
+      margin-bottom: rem(15);
+    }
+
+    input, button {
+      display: block;
+      width: 100%;
+      padding: rem(10) rem(40);
+
+    }
   }
 }

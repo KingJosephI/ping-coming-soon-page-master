@@ -14,7 +14,7 @@ btnSubmit.addEventListener('click', (e) => {
   e.preventDefault();
 
   if (emailInput.value.match(validEmailPattern)) {
-    alert('Your email has beeb registered');
+    alert('Your email has been registered');
   } else {
     errorMessage.style.display = 'block';
     emailInput.style.outline = '1px solid red';

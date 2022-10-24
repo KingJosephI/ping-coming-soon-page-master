@@ -46,12 +46,11 @@ main form {
 }
 main form .input-container {
   display: inline-block;
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align: left;
 }
 main form input {
   display: inline-block;
-  width: 26.3125rem;
+  min-width: 26.3125rem;
   outline: 0.0625rem solid #C2D3FF;
   padding: 0.625rem 1.25rem;
   margin-right: 1.25rem;
@@ -74,7 +73,8 @@ main form button {
   color: #FFF;
   font-weight: 500;
   font-size: 1rem;
-  padding: 0.625rem 1.875rem;
+  padding: 0.625rem 2.5rem;
+  display: block;
 }
 main form button:hover {
   cursor: pointer;
@@ -82,8 +82,8 @@ main form button:hover {
 }
 main form p {
   font-size: 0.75rem;
-  color: red;
   font-style: italic;
+  color: red;
   margin-top: 0.4375rem;
 }
 
@@ -116,4 +116,37 @@ footer .social-media > * i {
 footer .copyright {
   color: #969696;
   font-size: 0.75rem;
+}
+
+@media screen and (max-width: 56.25rem) {
+  body {
+    padding: 5.0625rem 3.125rem;
+  }
+  .input-container {
+    display: block;
+    width: 100%;
+  }
+  main h1 {
+    font-size: 2rem;
+  }
+  main h2 {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  main p {
+    text-align: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  form .input-container {
+    margin-bottom: 0.9375rem;
+  }
+  form input, form button {
+    display: block;
+    width: 100%;
+    padding: 0.625rem 2.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
