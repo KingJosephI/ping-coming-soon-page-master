@@ -8,4 +8,145 @@
 body {
   font-family: "Libre Franklin", sans-serif;
   font-size: 1rem;
+  max-width: 90rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5.0625rem 18.75rem;
+}
+
+main .logo img {
+  width: 5.625rem;
+}
+main img {
+  width: 100%;
+}
+main h1 {
+  font-size: 3rem;
+  line-height: 3.75rem;
+  color: #969696;
+  font-weight: 200;
+  padding-top: 3.75rem;
+}
+main h1 span {
+  color: #000;
+  font-weight: 700;
+}
+main h2 {
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+main form {
+  padding-top: 2.375rem;
+  padding-bottom: 5.875rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+main form .input-container {
+  display: inline-block;
+  text-align: left;
+}
+main form input {
+  display: inline-block;
+  min-width: 26.3125rem;
+  outline: 0.0625rem solid #C2D3FF;
+  padding: 0.625rem 1.25rem;
+  margin-right: 1.25rem;
+}
+main form input::-moz-placeholder {
+  color: #B8C7ED;
+}
+main form input:-ms-input-placeholder {
+  color: #B8C7ED;
+}
+main form input::placeholder {
+  color: #B8C7ED;
+}
+main form input, main form button {
+  border-radius: 1.25rem;
+  border: none;
+}
+main form button {
+  background-color: #4C7BF3;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.625rem 2.5rem;
+  display: block;
+}
+main form button:hover {
+  cursor: pointer;
+  background-color: rgba(76, 123, 243, 0.6431372549);
+}
+main form p {
+  font-size: 0.75rem;
+  font-style: italic;
+  color: red;
+  margin-top: 0.4375rem;
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  padding-top: 3.875rem;
+  padding-bottom: 1.5625rem;
+}
+footer .social-media > * {
+  border: 0.0625rem solid rgba(76, 123, 243, 0.4784313725);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 0.625rem;
+}
+footer .social-media > *:hover {
+  background-color: #4C7BF3;
+  cursor: pointer;
+}
+footer .social-media > *:hover i {
+  color: #fff;
+}
+footer .social-media > * i {
+  color: #4C7BF3;
+}
+footer .copyright {
+  color: #969696;
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 56.25rem) {
+  body {
+    padding: 5.0625rem 3.125rem;
+  }
+  .input-container {
+    display: block;
+    width: 100%;
+  }
+  main h1 {
+    font-size: 2rem;
+  }
+  main h2 {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  main p {
+    text-align: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  form .input-container {
+    margin-bottom: 0.9375rem;
+  }
+  form input, form button {
+    display: block;
+    width: 100%;
+    padding: 0.625rem 2.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
